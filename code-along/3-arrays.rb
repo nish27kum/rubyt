@@ -38,7 +38,7 @@ puts list [1][2]
 fav_foods = fav_foods + ["ramen"]
 p fav_foods
 
-fav_foods = fav_foods - ["icecream"]
+fav_foods = fav_foods - ["icecream", "tacos"]
 p fav_foods
 
 # There are lots of fun things you can do with arrays:
