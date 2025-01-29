@@ -12,6 +12,26 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
+d1 = rand(1..6)
+d2 = rand(1..6)
+
+
+if (d1 == d2) 
+    d2 += 1
+else
+    puts "dice1: " + d1.to_s
+    puts "dice2: " + d2.to_s
+end
+
+if (d1 + d2) == 7 || (d1 + d2) == 11
+    puts "YOU WIN!!"
+elsif ((d1 + d2) == 2) || ((d1 + d2) == 3) || ((d1 + d2) == 12)
+    puts "YOU LOSE!!"
+else
+    puts "THE POINT IS " + (d1 + d2).to_s
+end
+
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)

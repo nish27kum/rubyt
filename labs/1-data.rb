@@ -10,6 +10,18 @@
 # then write them out to the screen. Show the total
 # as well.
 
+
+d1 = rand(1..6)
+d2 = rand(1..6)
+
+
+if (d1 == d2) 
+    d2 += 1
+else
+    puts "dice1: " + d1.to_s
+    puts "dice2: " + d2.to_s
+end
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
